@@ -3,7 +3,7 @@
 //  WeatherTestApp
 //
 //  Created by adminaccount on 2/16/17.
-//  Copyright © 2017 Oleksiy Bilyi. All rights reserved.
+//  Copyright © 2017 Oleksandr. All rights reserved.
 //
 
 import UIKit
