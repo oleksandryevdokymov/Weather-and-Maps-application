@@ -170,61 +170,18 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let location = sender.location(in: mapView)
         let coordinate = mapView.convert(location, toCoordinateFrom: mapView)
         
-        var countryLabel: String!
-        var cityLabel: String!
-        
-        let geoCoder = CLGeocoder()
         parseTemperatureData(latitude: coordinate.latitude,
                              longitude: coordinate.longitude,
                              completionHandler: { (data) in
-                                //let parser = TemperatureParser(data: data)
-                                geoCoder.reverseGeocodeLocation(CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude), completionHandler: { (data, error) in
-                                    if let error = error {
-                                        print("geocode error: \(error.localizedDescription)")
-                                    } else {
-                                        countryLabel = data?[0].country
-                                        cityLabel = data?[0].administrativeArea!
-                                        print(cityLabel)
-                                        print(countryLabel)
-                                        let annotation = TemperatureAnnotation(title: cityLabel, subtitle: countryLabel, coordinate: coordinate)
-                                        DispatchQueue.main.async {
-                                            self.mapView.addAnnotation(annotation)
-                                        }
-
-                                    }
-                                })
-
-                })
-    }
-    /*
-    func parse() {
-        var countryLabel: String!
-        var cityLabel: String!
-        
-        let geoCoder = CLGeocoder()
-        parseTemperatureData(latitude: coordinate.latitude,
-                             longitude: coordinate.longitude,
-                             completionHandler: { (data) in
-                                //let parser = TemperatureParser(data: data)
-                                geoCoder.reverseGeocodeLocation(CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude), completionHandler: { (data, error) in
-                                    if let error = error {
-                                        print("geocode error: \(error.localizedDescription)")
-                                    } else {
-                                        countryLabel = data?[0].country
-                                        cityLabel = data?[0].administrativeArea!
-                                        print(cityLabel)
-                                        print(countryLabel)
-                                        let annotation = TemperatureAnnotation(title: cityLabel, subtitle: countryLabel, coordinate: coordinate)
-                                        DispatchQueue.main.async {
-                                            self.mapView.addAnnotation(annotation)
-                                        }
-                                        
-                                    }
-                                })
-                                
+                                let parser = WeatherParser(data: data)
+                                let annotation = TemperatureAnnotation(title: String(format: "%@", parser.cityName!), subtitle: String(format: "%g °C", parser.temperature!), coordinate: coordinate)
+                                //annotation.color = .green
+                                DispatchQueue.main.async {
+                                    self.mapView.addAnnotation(annotation)
+                                }
         })
     }
-    */
+    
     @IBAction func removeAnnotation(_ sender: UIButton) {
         mapView.removeAnnotations(mapView.annotations)
     }
@@ -255,9 +212,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         parseTemperatureData(latitude: latitude,
                              longitude: longitude,
                              completionHandler: { (data) in
-                                let parser = TemperatureParser(data: data)
-                                let annotation = TemperatureAnnotation(title: String(format: "%g City", parser.city!), subtitle: String(format: "%g hPa", parser.pressure!), coordinate: currentCoordinate)
-                                annotation.color = .green
+                                let parser = WeatherParser(data: data)
+                                let annotation = TemperatureAnnotation(title: String(format: "%@", parser.cityName!), subtitle: String(format: "%g hPa", parser.pressure!), coordinate: currentCoordinate)
+                                //annotation.color = .green
                                 DispatchQueue.main.async {
                                     self.mapView.addAnnotation(annotation)
                                 }

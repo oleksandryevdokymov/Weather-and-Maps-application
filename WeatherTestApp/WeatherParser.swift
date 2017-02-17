@@ -8,13 +8,13 @@
 
 import UIKit
 
-class TemperatureParser: NSObject, XMLParserDelegate {
+class WeatherParser: NSObject, XMLParserDelegate {
     var temperature: Double?
     var pressure: Double?
     var windSpeed: Double?
     var clouds: Double?
     var humidity: Double?
-    var city: String?
+    var cityName: String?
     
     init(data: Data) {
         super.init()
@@ -45,8 +45,9 @@ class TemperatureParser: NSObject, XMLParserDelegate {
             }
         }
         if elementName == "city" {
-            if let city = attributeDict["city"], let cityString = String(city) {
-                self.city = cityString
+            if let cityName = attributeDict["name"], let cityNameString = String(cityName) {
+                self.cityName = cityNameString
+                print("\(cityName)")
             }
         }
     }
