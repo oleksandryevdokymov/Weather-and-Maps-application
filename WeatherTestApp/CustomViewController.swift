@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import MapKit
 
 class CustomViewController: UIViewController {
-
+    var viewController = ViewController()
+    let session = URLSession(configuration: .default)
+    var currentCoordinates: CLLocationCoordinate2D!
     
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var pressureLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var windSpeedLabel: UILabel!
+    @IBOutlet weak var cloudsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewController.parseTemperatureData(latitude: currentCoordinates.latitude,
+                             longitude: currentCoordinates.longitude,
+                             completionHandler: { (data) in
+                                let parser = WeatherParser(data: data)
+                                self.cityLabel.text = parser.cityName!
+                                self.temperatureLabel.text = String(parser.temperature!) + String(" °C")
+                                self.pressureLabel.text = String(parser.pressure!) + String(" hPa")
+                                self.humidityLabel.text = String(parser.humidity!) + String(" %")
+                                //self.windSpeedLabel.text = String(parser.windSpeed!) + String(" m/s")
+                                //self.windSpeedLabel.text = String(parser.windDirection!)
+                                self.cloudsLabel.text = String(parser.clouds!) + String(" %")
+        })
     }
 }

@@ -15,6 +15,7 @@ class WeatherParser: NSObject, XMLParserDelegate {
     var clouds: Double?
     var humidity: Double?
     var cityName: String?
+    var windDirection: Double?
     
     init(data: Data) {
         super.init()
@@ -47,7 +48,16 @@ class WeatherParser: NSObject, XMLParserDelegate {
         if elementName == "city" {
             if let cityName = attributeDict["name"], let cityNameString = String(cityName) {
                 self.cityName = cityNameString
-                print("\(cityName)")
+            }
+        }
+        if elementName == "windDirection" {
+            if let windDirection = attributeDict["value"], let windDirectionDouble = Double(windDirection) {
+                self.windDirection = windDirectionDouble
+            }
+        }
+        if elementName == "clouds" {
+            if let clouds = attributeDict["value"], let cloudsDouble = Double(clouds) {
+                self.clouds = cloudsDouble
             }
         }
     }

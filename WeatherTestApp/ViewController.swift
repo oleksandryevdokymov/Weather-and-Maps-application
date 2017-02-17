@@ -25,6 +25,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var mapButtonCenter: CGPoint!
     var temperatureButtonCenter: CGPoint!
     var windButtonCenter: CGPoint!
+    var currentCoordinate: CLLocationCoordinate2D!
     
     // MARK: - IBOutlets
     @IBOutlet weak var mapView: MKMapView!
@@ -35,6 +36,32 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     @IBOutlet weak var temperatureButton: UIButton!
     @IBOutlet weak var windButton: UIButton!
     
+    // MARK: - View Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setCurrentLocation()
+        
+        pressureButtonCenter = pressureButton.center
+        presipitationButtonCenter = presipitationButton.center
+        mapButtonCenter = mapButton.center
+        temperatureButtonCenter = temperatureButton.center
+        windButtonCenter = windButton.center
+        
+        pressureButton.center = moreButton.center
+        presipitationButton.center = moreButton.center
+        mapButton.center = moreButton.center
+        temperatureButton.center = moreButton.center
+        windButton.center = moreButton.center
+        
+        mapView.delegate = self
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToCustomVIew" {
+            let customController = segue.destination as! CustomViewController
+            customController.currentCoordinates = currentCoordinate
+        }
+    }
     
     @IBAction func moreClicked(_ sender: UIButton) {
         if moreButton.currentImage == #imageLiteral(resourceName: "moreButtonOff") {
@@ -119,26 +146,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         } else {
             button.setImage(offImage, for: .normal)
         }
-    }
-    
-    // MARK: - View Life Cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setCurrentLocation()
-        
-        pressureButtonCenter = pressureButton.center
-        presipitationButtonCenter = presipitationButton.center
-        mapButtonCenter = mapButton.center
-        temperatureButtonCenter = temperatureButton.center
-        windButtonCenter = windButton.center
-        
-        pressureButton.center = moreButton.center
-        presipitationButton.center = moreButton.center
-        mapButton.center = moreButton.center
-        temperatureButton.center = moreButton.center
-        windButton.center = moreButton.center
-        
-        mapView.delegate = self
     }
     
     func setCurrentLocation() {
@@ -231,6 +238,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        currentCoordinate = view.annotation?.coordinate
         performSegue(withIdentifier: "segueToCustomVIew", sender: self)
     }
     
