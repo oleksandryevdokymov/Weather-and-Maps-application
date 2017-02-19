@@ -40,9 +40,9 @@ class WeatherParser: NSObject, XMLParserDelegate {
                 self.humidity = humidityDouble
             }
         }
-        if elementName == "windSpeed" {
-            if let windSpeed = attributeDict["value"], let windSpeedDouble = Double(windSpeed) {
-                self.windSpeed = windSpeedDouble
+        if elementName == "speed" {
+            if let windSpeed = attributeDict["value"], let windspeedDouble = Double(windSpeed) {
+                self.windSpeed = windspeedDouble
             }
         }
         if elementName == "city" {
@@ -50,7 +50,7 @@ class WeatherParser: NSObject, XMLParserDelegate {
                 self.cityName = cityNameString
             }
         }
-        if elementName == "windDirection" {
+        if elementName == "direction" {
             if let windDirection = attributeDict["value"], let windDirectionDouble = Double(windDirection) {
                 self.windDirection = windDirectionDouble
             }
