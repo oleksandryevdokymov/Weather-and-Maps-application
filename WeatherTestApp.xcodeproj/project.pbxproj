@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		259DF5251E534F02004C38B7 /* mapButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF5191E534F02004C38B7 /* mapButtonOff.png */; };
-		259DF5261E534F02004C38B7 /* mapButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF51A1E534F02004C38B7 /* mapButtonOn.png */; };
-		259DF5271E534F02004C38B7 /* moreButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF51B1E534F02004C38B7 /* moreButtonOff.png */; };
-		259DF5281E534F02004C38B7 /* moreButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF51C1E534F02004C38B7 /* moreButtonOn.png */; };
-		259DF5291E534F02004C38B7 /* precipitationButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF51D1E534F02004C38B7 /* precipitationButtonOff.png */; };
-		259DF52A1E534F02004C38B7 /* precipitationButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF51E1E534F02004C38B7 /* precipitationButtonOn.png */; };
-		259DF52B1E534F02004C38B7 /* pressureButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF51F1E534F02004C38B7 /* pressureButtonOff.png */; };
-		259DF52C1E534F02004C38B7 /* pressureButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF5201E534F02004C38B7 /* pressureButtonOn.png */; };
-		259DF52D1E534F02004C38B7 /* temperatureButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF5211E534F02004C38B7 /* temperatureButtonOff.png */; };
-		259DF52E1E534F02004C38B7 /* temperatureButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF5221E534F02004C38B7 /* temperatureButtonOn.png */; };
-		259DF52F1E534F02004C38B7 /* windButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF5231E534F02004C38B7 /* windButtonOff.png */; };
-		259DF5301E534F02004C38B7 /* windButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 259DF5241E534F02004C38B7 /* windButtonOn.png */; };
 		259DF5321E5380B6004C38B7 /* WeatherParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259DF5311E5380B6004C38B7 /* WeatherParser.swift */; };
 		259DF5341E5380CE004C38B7 /* WeatherAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259DF5331E5380CE004C38B7 /* WeatherAnnotation.swift */; };
-		25A39E471E55D3E4007912F7 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A39E461E55D3E4007912F7 /* pin.png */; };
 		25A39E491E562196007912F7 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A39E481E562196007912F7 /* CustomViewController.swift */; };
+		25A954C41E59E12600EC93D6 /* mapButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954B81E59E12600EC93D6 /* mapButtonOff.png */; };
+		25A954C51E59E12600EC93D6 /* mapButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954B91E59E12600EC93D6 /* mapButtonOn.png */; };
+		25A954C61E59E12600EC93D6 /* moreButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954BA1E59E12600EC93D6 /* moreButtonOff.png */; };
+		25A954C71E59E12600EC93D6 /* moreButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954BB1E59E12600EC93D6 /* moreButtonOn.png */; };
+		25A954C81E59E12600EC93D6 /* precipitationButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954BC1E59E12600EC93D6 /* precipitationButtonOff.png */; };
+		25A954C91E59E12600EC93D6 /* precipitationButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954BD1E59E12600EC93D6 /* precipitationButtonOn.png */; };
+		25A954CA1E59E12600EC93D6 /* pressureButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954BE1E59E12600EC93D6 /* pressureButtonOff.png */; };
+		25A954CB1E59E12600EC93D6 /* pressureButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954BF1E59E12600EC93D6 /* pressureButtonOn.png */; };
+		25A954CC1E59E12600EC93D6 /* temperatureButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954C01E59E12600EC93D6 /* temperatureButtonOff.png */; };
+		25A954CD1E59E12600EC93D6 /* temperatureButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954C11E59E12600EC93D6 /* temperatureButtonOn.png */; };
+		25A954CE1E59E12600EC93D6 /* windButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954C21E59E12600EC93D6 /* windButtonOff.png */; };
+		25A954CF1E59E12600EC93D6 /* windButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954C31E59E12600EC93D6 /* windButtonOn.png */; };
 		481E466A1E48F9250028E574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E46691E48F9250028E574 /* AppDelegate.swift */; };
 		481E466C1E48F9250028E574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E466B1E48F9250028E574 /* ViewController.swift */; };
 		481E466F1E48F9250028E574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481E466D1E48F9250028E574 /* Main.storyboard */; };
@@ -31,22 +30,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		259DF5191E534F02004C38B7 /* mapButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapButtonOff.png; path = Buttons/mapButtonOff.png; sourceTree = SOURCE_ROOT; };
-		259DF51A1E534F02004C38B7 /* mapButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapButtonOn.png; path = Buttons/mapButtonOn.png; sourceTree = SOURCE_ROOT; };
-		259DF51B1E534F02004C38B7 /* moreButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreButtonOff.png; path = Buttons/moreButtonOff.png; sourceTree = SOURCE_ROOT; };
-		259DF51C1E534F02004C38B7 /* moreButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreButtonOn.png; path = Buttons/moreButtonOn.png; sourceTree = SOURCE_ROOT; };
-		259DF51D1E534F02004C38B7 /* precipitationButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = precipitationButtonOff.png; path = Buttons/precipitationButtonOff.png; sourceTree = SOURCE_ROOT; };
-		259DF51E1E534F02004C38B7 /* precipitationButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = precipitationButtonOn.png; path = Buttons/precipitationButtonOn.png; sourceTree = SOURCE_ROOT; };
-		259DF51F1E534F02004C38B7 /* pressureButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pressureButtonOff.png; path = Buttons/pressureButtonOff.png; sourceTree = SOURCE_ROOT; };
-		259DF5201E534F02004C38B7 /* pressureButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pressureButtonOn.png; path = Buttons/pressureButtonOn.png; sourceTree = SOURCE_ROOT; };
-		259DF5211E534F02004C38B7 /* temperatureButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = temperatureButtonOff.png; path = Buttons/temperatureButtonOff.png; sourceTree = SOURCE_ROOT; };
-		259DF5221E534F02004C38B7 /* temperatureButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = temperatureButtonOn.png; path = Buttons/temperatureButtonOn.png; sourceTree = SOURCE_ROOT; };
-		259DF5231E534F02004C38B7 /* windButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windButtonOff.png; path = Buttons/windButtonOff.png; sourceTree = SOURCE_ROOT; };
-		259DF5241E534F02004C38B7 /* windButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windButtonOn.png; path = Buttons/windButtonOn.png; sourceTree = SOURCE_ROOT; };
 		259DF5311E5380B6004C38B7 /* WeatherParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherParser.swift; sourceTree = "<group>"; };
 		259DF5331E5380CE004C38B7 /* WeatherAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAnnotation.swift; sourceTree = "<group>"; };
-		25A39E461E55D3E4007912F7 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pin.png; path = Buttons/pin.png; sourceTree = SOURCE_ROOT; };
 		25A39E481E562196007912F7 /* CustomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		25A954B81E59E12600EC93D6 /* mapButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapButtonOff.png; path = Buttons/mapButtonOff.png; sourceTree = SOURCE_ROOT; };
+		25A954B91E59E12600EC93D6 /* mapButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapButtonOn.png; path = Buttons/mapButtonOn.png; sourceTree = SOURCE_ROOT; };
+		25A954BA1E59E12600EC93D6 /* moreButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreButtonOff.png; path = Buttons/moreButtonOff.png; sourceTree = SOURCE_ROOT; };
+		25A954BB1E59E12600EC93D6 /* moreButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreButtonOn.png; path = Buttons/moreButtonOn.png; sourceTree = SOURCE_ROOT; };
+		25A954BC1E59E12600EC93D6 /* precipitationButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = precipitationButtonOff.png; path = Buttons/precipitationButtonOff.png; sourceTree = SOURCE_ROOT; };
+		25A954BD1E59E12600EC93D6 /* precipitationButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = precipitationButtonOn.png; path = Buttons/precipitationButtonOn.png; sourceTree = SOURCE_ROOT; };
+		25A954BE1E59E12600EC93D6 /* pressureButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pressureButtonOff.png; path = Buttons/pressureButtonOff.png; sourceTree = SOURCE_ROOT; };
+		25A954BF1E59E12600EC93D6 /* pressureButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pressureButtonOn.png; path = Buttons/pressureButtonOn.png; sourceTree = SOURCE_ROOT; };
+		25A954C01E59E12600EC93D6 /* temperatureButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = temperatureButtonOff.png; path = Buttons/temperatureButtonOff.png; sourceTree = SOURCE_ROOT; };
+		25A954C11E59E12600EC93D6 /* temperatureButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = temperatureButtonOn.png; path = Buttons/temperatureButtonOn.png; sourceTree = SOURCE_ROOT; };
+		25A954C21E59E12600EC93D6 /* windButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windButtonOff.png; path = Buttons/windButtonOff.png; sourceTree = SOURCE_ROOT; };
+		25A954C31E59E12600EC93D6 /* windButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windButtonOn.png; path = Buttons/windButtonOn.png; sourceTree = SOURCE_ROOT; };
 		481E46661E48F9250028E574 /* WeatherTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		481E46691E48F9250028E574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		481E466B1E48F9250028E574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,22 +65,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		259DF5041E53488E004C38B7 /* Buttons */ = {
+		25A9549F1E59DA2600EC93D6 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				259DF5191E534F02004C38B7 /* mapButtonOff.png */,
-				25A39E461E55D3E4007912F7 /* pin.png */,
-				259DF51A1E534F02004C38B7 /* mapButtonOn.png */,
-				259DF51B1E534F02004C38B7 /* moreButtonOff.png */,
-				259DF51C1E534F02004C38B7 /* moreButtonOn.png */,
-				259DF51D1E534F02004C38B7 /* precipitationButtonOff.png */,
-				259DF51E1E534F02004C38B7 /* precipitationButtonOn.png */,
-				259DF51F1E534F02004C38B7 /* pressureButtonOff.png */,
-				259DF5201E534F02004C38B7 /* pressureButtonOn.png */,
-				259DF5211E534F02004C38B7 /* temperatureButtonOff.png */,
-				259DF5221E534F02004C38B7 /* temperatureButtonOn.png */,
-				259DF5231E534F02004C38B7 /* windButtonOff.png */,
-				259DF5241E534F02004C38B7 /* windButtonOn.png */,
+				25A954B81E59E12600EC93D6 /* mapButtonOff.png */,
+				25A954B91E59E12600EC93D6 /* mapButtonOn.png */,
+				25A954BA1E59E12600EC93D6 /* moreButtonOff.png */,
+				25A954BB1E59E12600EC93D6 /* moreButtonOn.png */,
+				25A954BC1E59E12600EC93D6 /* precipitationButtonOff.png */,
+				25A954BD1E59E12600EC93D6 /* precipitationButtonOn.png */,
+				25A954BE1E59E12600EC93D6 /* pressureButtonOff.png */,
+				25A954BF1E59E12600EC93D6 /* pressureButtonOn.png */,
+				25A954C01E59E12600EC93D6 /* temperatureButtonOff.png */,
+				25A954C11E59E12600EC93D6 /* temperatureButtonOn.png */,
+				25A954C21E59E12600EC93D6 /* windButtonOff.png */,
+				25A954C31E59E12600EC93D6 /* windButtonOn.png */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -91,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				481E46681E48F9250028E574 /* WeatherTestApp */,
-				481E46671E48F9250028E574 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +97,7 @@
 				481E46661E48F9250028E574 /* WeatherTestApp.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		481E46681E48F9250028E574 /* WeatherTestApp */ = {
@@ -115,7 +112,8 @@
 				481E46701E48F9250028E574 /* Assets.xcassets */,
 				481E46721E48F9250028E574 /* LaunchScreen.storyboard */,
 				481E46751E48F9250028E574 /* Info.plist */,
-				259DF5041E53488E004C38B7 /* Buttons */,
+				481E46671E48F9250028E574 /* Products */,
+				25A9549F1E59DA2600EC93D6 /* Buttons */,
 			);
 			path = WeatherTestApp;
 			sourceTree = "<group>";
@@ -180,22 +178,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				259DF5251E534F02004C38B7 /* mapButtonOff.png in Resources */,
-				25A39E471E55D3E4007912F7 /* pin.png in Resources */,
+				25A954C41E59E12600EC93D6 /* mapButtonOff.png in Resources */,
 				481E46741E48F9250028E574 /* LaunchScreen.storyboard in Resources */,
-				259DF5301E534F02004C38B7 /* windButtonOn.png in Resources */,
-				259DF5271E534F02004C38B7 /* moreButtonOff.png in Resources */,
+				25A954CF1E59E12600EC93D6 /* windButtonOn.png in Resources */,
+				25A954C61E59E12600EC93D6 /* moreButtonOff.png in Resources */,
 				481E46711E48F9250028E574 /* Assets.xcassets in Resources */,
-				259DF52D1E534F02004C38B7 /* temperatureButtonOff.png in Resources */,
-				259DF52C1E534F02004C38B7 /* pressureButtonOn.png in Resources */,
-				259DF52B1E534F02004C38B7 /* pressureButtonOff.png in Resources */,
-				259DF52F1E534F02004C38B7 /* windButtonOff.png in Resources */,
+				25A954CC1E59E12600EC93D6 /* temperatureButtonOff.png in Resources */,
+				25A954CB1E59E12600EC93D6 /* pressureButtonOn.png in Resources */,
+				25A954CA1E59E12600EC93D6 /* pressureButtonOff.png in Resources */,
+				25A954CE1E59E12600EC93D6 /* windButtonOff.png in Resources */,
 				481E466F1E48F9250028E574 /* Main.storyboard in Resources */,
-				259DF5281E534F02004C38B7 /* moreButtonOn.png in Resources */,
-				259DF5261E534F02004C38B7 /* mapButtonOn.png in Resources */,
-				259DF52E1E534F02004C38B7 /* temperatureButtonOn.png in Resources */,
-				259DF52A1E534F02004C38B7 /* precipitationButtonOn.png in Resources */,
-				259DF5291E534F02004C38B7 /* precipitationButtonOff.png in Resources */,
+				25A954C71E59E12600EC93D6 /* moreButtonOn.png in Resources */,
+				25A954C51E59E12600EC93D6 /* mapButtonOn.png in Resources */,
+				25A954CD1E59E12600EC93D6 /* temperatureButtonOn.png in Resources */,
+				25A954C91E59E12600EC93D6 /* precipitationButtonOn.png in Resources */,
+				25A954C81E59E12600EC93D6 /* precipitationButtonOff.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
