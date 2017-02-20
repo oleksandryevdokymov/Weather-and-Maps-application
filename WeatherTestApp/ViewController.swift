@@ -220,7 +220,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                              longitude: longitude,
                              completionHandler: { (data) in
                                 let parser = WeatherParser(data: data)
-                                let annotation = TemperatureAnnotation(title: String(format: "%@", parser.cityName!), subtitle: String(format: "%g hPa", parser.pressure!), coordinate: currentCoordinate)
+                                let annotation = TemperatureAnnotation(title: String(format: "%@", parser.cityName!), subtitle: String(format: "%g °C", parser.temperature!), coordinate: currentCoordinate)
                                 //annotation.color = .green
                                 DispatchQueue.main.async {
                                     self.mapView.addAnnotation(annotation)
