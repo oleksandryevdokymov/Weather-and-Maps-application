@@ -15,6 +15,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     // MARK: - Parameters
     let locationManager = CLLocationManager()
     let session = URLSession(configuration: .default)
+    var mapOverlay = MKTileOverlay()
+    let googleMapUrl = "http://mt0.google.com/vt/x={x}&y={y}&z={z}"
+    let openStreetUrl = "http://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
     let temperatureOverlay = MKTileOverlay(urlTemplate: "http://maps.owm.io:8099/5735d67f5836286b007625cd/{z}/{x}/{y}?hash=ba22ef4840c7fcb08a7a7b92bf80d1fc")
     let windOverlay = MKTileOverlay(urlTemplate: "http://maps.owm.io:8099/5735d67f5836286b0076267b/{z}/{x}/{y}?hash=e529bed414220dfa2559b17e3f5ca831")
     let precipitationOvarlay = MKTileOverlay(urlTemplate: "http://maps.owm.io:8099/57456d1237fb4e01009cbb17/{z}/{x}/{y}?hash=042a4b4c8ec6bc8392aabf46fa91003c")
@@ -60,6 +63,24 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if segue.identifier == "segueToCustomVIew" {
             let customController = segue.destination as! CustomViewController
             customController.currentCoordinates = currentCoordinate
+        }
+    }
+    
+    @IBAction func mapChenges(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            mapView.remove(mapOverlay)
+            mapOverlay.canReplaceMapContent = true
+            mapView.mapType = MKMapType.standard
+        } else if sender.selectedSegmentIndex == 1 {
+            mapView.remove(mapOverlay)
+            mapOverlay = MKTileOverlay(urlTemplate: googleMapUrl)
+            mapOverlay.canReplaceMapContent = true
+            mapView.insert(mapOverlay, at: 0)
+        } else if sender.selectedSegmentIndex == 2 {
+            mapView.remove(mapOverlay)
+            mapOverlay = MKTileOverlay(urlTemplate: openStreetUrl)
+            mapOverlay.canReplaceMapContent = true
+            mapView.insert(mapOverlay, at: 0)
         }
     }
     
@@ -191,15 +212,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @IBAction func removeAnnotation(_ sender: UIButton) {
         mapView.removeAnnotations(mapView.annotations)
-    }
-    @IBAction func mapChenges(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            mapView.mapType = MKMapType.standard
-        } else if sender.selectedSegmentIndex == 1 {
-            mapView.mapType = MKMapType.satellite
-        } else if sender.selectedSegmentIndex == 2 {
-            mapView.mapType = MKMapType.hybrid
-        }
     }
     
     //MARK: - Location Delegate Methods

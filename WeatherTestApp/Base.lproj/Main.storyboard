@@ -200,8 +200,8 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Standart"/>
-                                <segment title="Satellite"/>
-                                <segment title="Hybrid"/>
+                                <segment title="Google Map"/>
+                                <segment title="OpenStreet Map"/>
                             </segments>
                             <connections>
                                 <action selector="mapChenges:" destination="BYZ-38-t0r" eventType="valueChanged" id="nxV-jn-Bn7"/>
