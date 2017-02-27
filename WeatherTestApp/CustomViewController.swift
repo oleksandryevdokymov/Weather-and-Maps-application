@@ -11,6 +11,7 @@ import MapKit
 
 class CustomViewController: UIViewController {
     var viewController = ViewController()
+
     let session = URLSession(configuration: .default)
     var currentCoordinates: CLLocationCoordinate2D!
     
@@ -21,10 +22,11 @@ class CustomViewController: UIViewController {
     @IBOutlet weak var windSpeedLabel: UILabel!
     @IBOutlet weak var cloudsLabel: UILabel!
     @IBOutlet weak var windDirectionLabel: UILabel!
+    @IBOutlet weak var weatherImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewController.parseTemperatureData(latitude: currentCoordinates.latitude,
+        viewController.parseData(latitude: currentCoordinates.latitude,
                              longitude: currentCoordinates.longitude,
                              completionHandler: { (data) in
                                 let parser = WeatherParser(data: data)
@@ -36,6 +38,7 @@ class CustomViewController: UIViewController {
                                     self.windSpeedLabel.text = String(parser.windSpeed!) + String(" m/s")
                                     self.windDirectionLabel.text = String(parser.windDirection!) + String(" °")
                                     self.cloudsLabel.text = String(parser.clouds!) + String(" %")
+                                    self.weatherImageView.image = parser.weatherIcon
                                 }
         })
     }

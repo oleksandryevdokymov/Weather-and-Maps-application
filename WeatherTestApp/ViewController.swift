@@ -177,7 +177,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.showsUserLocation = true
     }
     
-    func parseTemperatureData(latitude: Double, longitude: Double, completionHandler: @escaping (_ data: Data) -> Void ) {
+    func parseData(latitude: Double, longitude: Double, completionHandler: @escaping (_ data: Data) -> Void ) {
         let string = "http://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&units=metric&mode=xml&APPID=29a9f3444c733ccb3d08150e11240799"
         let url = URL(string: string)
         let dataTask = session.dataTask(with: url!, completionHandler: { (data, response, error) in
@@ -198,7 +198,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let location = sender.location(in: mapView)
         let coordinate = mapView.convert(location, toCoordinateFrom: mapView)
         
-        parseTemperatureData(latitude: coordinate.latitude,
+        parseData(latitude: coordinate.latitude,
                              longitude: coordinate.longitude,
                              completionHandler: { (data) in
                                 let parser = WeatherParser(data: data)
@@ -228,7 +228,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let latitude = currentCoordinate.latitude
         let longitude = currentCoordinate.longitude
         self.locationManager.stopUpdatingLocation()
-        parseTemperatureData(latitude: latitude,
+        parseData(latitude: latitude,
                              longitude: longitude,
                              completionHandler: { (data) in
                                 let parser = WeatherParser(data: data)

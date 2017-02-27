@@ -348,6 +348,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-R7-ssX">
+                                <rect key="frame" x="37" y="90" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.36862745099999999" green="0.48627450979999998" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -359,6 +362,7 @@
                             <constraint firstItem="jyh-rT-AT8" firstAttribute="leading" secondItem="Zke-zh-t5e" secondAttribute="leading" id="BgG-J3-4y3"/>
                             <constraint firstItem="WOb-4t-RKu" firstAttribute="top" secondItem="HP5-vt-Zcv" secondAttribute="bottom" constant="31" id="Cc5-Y2-RrF"/>
                             <constraint firstItem="7NF-pD-mrF" firstAttribute="top" secondItem="RP0-zQ-zbB" secondAttribute="bottom" constant="11" id="Cyr-qm-Yxu"/>
+                            <constraint firstItem="Ktg-R7-ssX" firstAttribute="top" secondItem="7d2-6u-fLo" secondAttribute="bottom" constant="26" id="DNb-G6-Uyu"/>
                             <constraint firstItem="WOb-4t-RKu" firstAttribute="trailing" secondItem="Ho2-nU-43C" secondAttribute="trailing" id="ELU-fh-SU0"/>
                             <constraint firstItem="jyh-rT-AT8" firstAttribute="trailing" secondItem="Zke-zh-t5e" secondAttribute="trailing" id="Eem-Jm-nBp"/>
                             <constraint firstItem="Zke-zh-t5e" firstAttribute="top" secondItem="jyh-rT-AT8" secondAttribute="bottom" constant="8" symbolic="YES" id="Fwg-j2-QEO"/>
@@ -374,16 +378,19 @@
                             <constraint firstItem="ZSq-EJ-jeO" firstAttribute="top" secondItem="UoS-SU-lkd" secondAttribute="bottom" constant="8" symbolic="YES" id="SlX-82-1K7"/>
                             <constraint firstItem="HP5-vt-Zcv" firstAttribute="top" secondItem="7d2-6u-fLo" secondAttribute="bottom" id="TJl-ap-yN3"/>
                             <constraint firstItem="rbg-km-YJr" firstAttribute="top" secondItem="Zke-zh-t5e" secondAttribute="bottom" constant="8" symbolic="YES" id="Tkv-8R-LT4"/>
+                            <constraint firstItem="HP5-vt-Zcv" firstAttribute="leading" secondItem="Ktg-R7-ssX" secondAttribute="trailing" constant="8" id="UC7-2y-9i8"/>
                             <constraint firstItem="7NF-pD-mrF" firstAttribute="trailing" secondItem="hmr-kz-I0n" secondAttribute="trailing" id="W8f-8l-ew4"/>
                             <constraint firstItem="HP5-vt-Zcv" firstAttribute="leading" secondItem="dIL-5G-lOI" secondAttribute="leadingMargin" constant="79" id="Wwn-OW-BQj"/>
                             <constraint firstItem="WOb-4t-RKu" firstAttribute="leading" secondItem="VOL-Zh-ESm" secondAttribute="trailing" constant="18" id="XR9-3q-6bk"/>
                             <constraint firstItem="Ho2-nU-43C" firstAttribute="trailing" secondItem="UoS-SU-lkd" secondAttribute="trailing" id="ZZ1-8N-fdL"/>
+                            <constraint firstItem="jyh-rT-AT8" firstAttribute="top" secondItem="Ktg-R7-ssX" secondAttribute="bottom" constant="28" id="aMQ-ox-JiZ"/>
                             <constraint firstItem="7NF-pD-mrF" firstAttribute="leading" secondItem="hmr-kz-I0n" secondAttribute="leading" id="dDZ-cb-GpP"/>
                             <constraint firstItem="RP0-zQ-zbB" firstAttribute="top" secondItem="rbg-km-YJr" secondAttribute="bottom" constant="8" symbolic="YES" id="dP4-Ov-8Kc"/>
                             <constraint firstItem="WOb-4t-RKu" firstAttribute="trailing" secondItem="dIL-5G-lOI" secondAttribute="trailingMargin" id="e45-ew-Yw2"/>
                             <constraint firstItem="Ho2-nU-43C" firstAttribute="top" secondItem="WOb-4t-RKu" secondAttribute="bottom" constant="12" id="iXm-Tg-Ds8"/>
                             <constraint firstItem="VOL-Zh-ESm" firstAttribute="leading" secondItem="jyh-rT-AT8" secondAttribute="leading" id="ixo-sw-KzE"/>
                             <constraint firstItem="ZSq-EJ-jeO" firstAttribute="trailing" secondItem="abZ-OM-JTx" secondAttribute="trailing" id="jW8-M9-UAl"/>
+                            <constraint firstItem="Ktg-R7-ssX" firstAttribute="leading" secondItem="dIL-5G-lOI" secondAttribute="leadingMargin" constant="21" id="joC-vI-p1y"/>
                             <constraint firstItem="UoS-SU-lkd" firstAttribute="trailing" secondItem="ZSq-EJ-jeO" secondAttribute="trailing" id="nRw-b8-39d"/>
                             <constraint firstItem="abZ-OM-JTx" firstAttribute="top" secondItem="ZSq-EJ-jeO" secondAttribute="bottom" constant="8" symbolic="YES" id="oEm-Fr-krs"/>
                             <constraint firstItem="VOL-Zh-ESm" firstAttribute="trailing" secondItem="jyh-rT-AT8" secondAttribute="trailing" id="oym-QT-2Sd"/>
@@ -403,6 +410,7 @@
                         <outlet property="humidityLabel" destination="ZSq-EJ-jeO" id="TSh-KL-sJZ"/>
                         <outlet property="pressureLabel" destination="UoS-SU-lkd" id="B7M-g0-Qku"/>
                         <outlet property="temperatureLabel" destination="Ho2-nU-43C" id="VZ9-Bg-Bwh"/>
+                        <outlet property="weatherImageView" destination="Ktg-R7-ssX" id="oAr-wO-uw0"/>
                         <outlet property="windDirectionLabel" destination="3NQ-Zy-KqQ" id="IbJ-0a-bsd"/>
                         <outlet property="windSpeedLabel" destination="abZ-OM-JTx" id="4aR-fA-gdr"/>
                     </connections>
