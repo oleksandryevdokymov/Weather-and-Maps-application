@@ -78,6 +78,16 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		2548E5BF1E64578F00BF670D /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				481E46701E48F9250028E574 /* Assets.xcassets */,
+				481E46721E48F9250028E574 /* LaunchScreen.storyboard */,
+				481E46751E48F9250028E574 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
 		25A9549F1E59DA2600EC93D6 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,11 +131,9 @@
 				259DF5311E5380B6004C38B7 /* WeatherParser.swift */,
 				259DF5331E5380CE004C38B7 /* WeatherAnnotation.swift */,
 				25A39E481E562196007912F7 /* CustomViewController.swift */,
-				2548E5BA1E6453BF00BF670D /* Icons */,
 				481E466D1E48F9250028E574 /* Main.storyboard */,
-				481E46701E48F9250028E574 /* Assets.xcassets */,
-				481E46721E48F9250028E574 /* LaunchScreen.storyboard */,
-				481E46751E48F9250028E574 /* Info.plist */,
+				2548E5BA1E6453BF00BF670D /* Icons */,
+				2548E5BF1E64578F00BF670D /* Supporting files */,
 				481E46671E48F9250028E574 /* Products */,
 				25A9549F1E59DA2600EC93D6 /* Buttons */,
 			);
