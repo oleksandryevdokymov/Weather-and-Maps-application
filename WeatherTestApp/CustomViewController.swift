@@ -38,6 +38,9 @@ class CustomViewController: UIViewController {
                                     self.windSpeedLabel.text = String(parser.windSpeed!) + String(" m/s")
                                     self.windDirectionLabel.text = String(parser.windDirection!) + String(" °")
                                     self.cloudsLabel.text = String(parser.clouds!) + String(" %")
+                                    //self.weatherImageView.image = parser.weatherIcon
+                                }
+                                DispatchQueue.main.sync {
                                     self.weatherImageView.image = parser.weatherIcon
                                 }
         })
