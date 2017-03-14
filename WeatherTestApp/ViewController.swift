@@ -191,8 +191,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         })
         dataTask.resume()
     }
-   
-    var tempTitle: String!
     
     @IBAction func handleTap(_ sender: UILongPressGestureRecognizer) {
         let location = sender.location(in: mapView)
@@ -203,7 +201,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                              completionHandler: { (data) in
                                 let parser = WeatherParser(data: data)
                                 let annotation = TemperatureAnnotation(title: String(format: "%@", parser.cityName!), subtitle: String(format: "%g °C", parser.temperature!), coordinate: coordinate)
-                                //annotation.color = .green
                                 DispatchQueue.main.async {
                                     self.mapView.addAnnotation(annotation)
                                 }
@@ -266,13 +263,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -8, y: -5)
                 view.pinTintColor = annotation.color
-                //view.animatesDrop = true
-                //view.image = UIImage(named: "mapButtonOff.png")
                 view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIButton
             }
             return view
         }
         return nil
     }
-    
 }

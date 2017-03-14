@@ -18,10 +18,6 @@ class WeatherParser: NSObject, XMLParserDelegate {
     var windDirection: Double?
     var weatherIcon : UIImage?
     var iconDownloadCompletion : ((UIImage?) -> Void)?
-
-    
-    var sunrise: String?
-    var sunset: String?
     
     init(data: Data) {
         super.init()
