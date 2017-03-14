@@ -24,6 +24,7 @@
 		25A954CD1E59E12600EC93D6 /* temperatureButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954C11E59E12600EC93D6 /* temperatureButtonOn.png */; };
 		25A954CE1E59E12600EC93D6 /* windButtonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954C21E59E12600EC93D6 /* windButtonOff.png */; };
 		25A954CF1E59E12600EC93D6 /* windButtonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 25A954C31E59E12600EC93D6 /* windButtonOn.png */; };
+		25DCFEC61E78246E000D8B5F /* weatherpredicting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25DCFEC51E78246E000D8B5F /* weatherpredicting.jpg */; };
 		481E466A1E48F9250028E574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E46691E48F9250028E574 /* AppDelegate.swift */; };
 		481E466C1E48F9250028E574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E466B1E48F9250028E574 /* ViewController.swift */; };
 		481E466F1E48F9250028E574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 481E466D1E48F9250028E574 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		25A954C11E59E12600EC93D6 /* temperatureButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = temperatureButtonOn.png; path = Buttons/temperatureButtonOn.png; sourceTree = SOURCE_ROOT; };
 		25A954C21E59E12600EC93D6 /* windButtonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windButtonOff.png; path = Buttons/windButtonOff.png; sourceTree = SOURCE_ROOT; };
 		25A954C31E59E12600EC93D6 /* windButtonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = windButtonOn.png; path = Buttons/windButtonOn.png; sourceTree = SOURCE_ROOT; };
+		25DCFEC51E78246E000D8B5F /* weatherpredicting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = weatherpredicting.jpg; path = Image/weatherpredicting.jpg; sourceTree = SOURCE_ROOT; };
 		481E46661E48F9250028E574 /* WeatherTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		481E46691E48F9250028E574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		481E466B1E48F9250028E574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
+		25DCFEC41E782421000D8B5F /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				25DCFEC51E78246E000D8B5F /* weatherpredicting.jpg */,
+			);
+			name = Picture;
+			sourceTree = "<group>";
+		};
 		481E465D1E48F9250028E574 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 				259DF5331E5380CE004C38B7 /* WeatherAnnotation.swift */,
 				25A39E481E562196007912F7 /* CustomViewController.swift */,
 				481E466D1E48F9250028E574 /* Main.storyboard */,
+				25DCFEC41E782421000D8B5F /* Picture */,
 				2548E5BA1E6453BF00BF670D /* Icons */,
 				2548E5BF1E64578F00BF670D /* Supporting files */,
 				481E46671E48F9250028E574 /* Products */,
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A954C41E59E12600EC93D6 /* mapButtonOff.png in Resources */,
+				25DCFEC61E78246E000D8B5F /* weatherpredicting.jpg in Resources */,
 				481E46741E48F9250028E574 /* LaunchScreen.storyboard in Resources */,
 				25A954CF1E59E12600EC93D6 /* windButtonOn.png in Resources */,
 				25A954C61E59E12600EC93D6 /* moreButtonOff.png in Resources */,
