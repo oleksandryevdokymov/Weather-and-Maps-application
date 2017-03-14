@@ -17,6 +17,8 @@ class WeatherParser: NSObject, XMLParserDelegate {
     var cityName: String?
     var windDirection: Double?
     var weatherIcon : UIImage?
+    var sunrise: String?
+    var sunset: String?
     var iconDownloadCompletion : ((UIImage?) -> Void)?
     
     init(data: Data) {
@@ -89,6 +91,15 @@ class WeatherParser: NSObject, XMLParserDelegate {
             if let icon = attributeDict["icon"] {
                 let iconUrl = "http://openweathermap.org/img/w/\(icon).png"
                 downloadConditionImage(urlTemplate: iconUrl)
+            }
+        }
+        if elementName == "sun" {
+            if let rise = attributeDict["rise"] {
+                sunrise = rise[rise.index(rise.startIndex, offsetBy: 11)...rise.index(rise.endIndex, offsetBy: -4)]
+            }
+            if let set = attributeDict["set"] {
+                sunset = set[set.index(set.startIndex, offsetBy: 11)...set.index(set.endIndex, offsetBy: -4)]
+                
             }
         }
     }

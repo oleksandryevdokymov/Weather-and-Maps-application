@@ -23,6 +23,8 @@ class CustomViewController: UIViewController {
     @IBOutlet weak var cloudsLabel: UILabel!
     @IBOutlet weak var windDirectionLabel: UILabel!
     @IBOutlet weak var weatherImageView: UIImageView!
+    @IBOutlet weak var sunriseLabel: UILabel!
+    @IBOutlet weak var sunsetLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,8 @@ class CustomViewController: UIViewController {
                                     self.windSpeedLabel.text = String(parser.windSpeed!) + String(" m/s")
                                     self.windDirectionLabel.text = String(parser.windDirection!) + String(" °")
                                     self.cloudsLabel.text = String(parser.clouds!) + String(" %")
+                                    self.sunriseLabel.text = parser.sunrise!
+                                    self.sunsetLabel.text = parser.sunset!
                                     //self.weatherImageView.image = parser.weatherIcon
                                 }
                                 DispatchQueue.main.sync {
